@@ -17,7 +17,7 @@ pub struct Gilrs {}
 
 impl Gilrs {
     pub(crate) fn new() -> Result<Self, PlatformError> {
-        Err(PlatformError::NotImplemented(Gilrs {}))
+        Ok(Gilrs{})
     }
 
     pub(crate) fn next_event(&mut self) -> Option<Event> {

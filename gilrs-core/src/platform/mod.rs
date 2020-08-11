@@ -29,7 +29,7 @@ mod platform;
 #[path = "macos/mod.rs"]
 mod platform;
 
-#[cfg(target_arch = "openbsd")]
+#[cfg(target_os = "openbsd")]
 #[path = "openbsd/mod.rs"]
 mod platform;
 
